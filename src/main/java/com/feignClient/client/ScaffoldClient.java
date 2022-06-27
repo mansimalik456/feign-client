@@ -11,6 +11,5 @@ public interface ScaffoldClient {
 //	@GetMapping(UrlConstants.GET_USER)
 	@GetMapping("/v1/management/user/{userId}")
 	public Object getUserById(@PathVariable long userId, @RequestHeader("Authorization") String accessToken);
-
-
+	
 }
